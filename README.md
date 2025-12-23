@@ -112,8 +112,8 @@ To avoid **environment conflicts** (Python version, Django version, missing depe
 4. Run the following commands:
 
 ```bash
-python manage.py makemigrations
-python manage.py migrate
+pip install -r requirement.txt
+pip install django djangorestframework
 python manage.py createsuperuser
 python manage.py runserver
 ```
@@ -196,3 +196,4 @@ This project is intended for:
 * No role-based redirects in public entry pages
 * Django admin used as the **single admin access point**
 * Clean separation between authentication and authorization
+
